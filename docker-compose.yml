@@ -1,0 +1,9 @@
+services:
+  analysis-enviornment:
+    image: mycontainer
+    ports:
+    - 8787:8787
+    volumes:
+    - .:home/rstudio/work
+    enviornment:
+      PASSWORD: "pizza"
