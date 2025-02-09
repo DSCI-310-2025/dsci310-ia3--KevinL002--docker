@@ -31,7 +31,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: kevinl002/dsci310_assign_3 # change to your image
+          images: kevinl002/dockerfile-practice # change to your image
           tags: |
             type=raw, value={{sha}},enable=${{github.ref_type != 'tag' }}
             type=raw, value=latest
